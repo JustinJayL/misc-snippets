@@ -53,8 +53,6 @@ string unhexlify(string input) {
     string::iterator it;
     int cur = 0;
     for (it = input.begin(); it != input.end(); it += 2) {
-
-
         output += (charMap[std::string(1, it[0])] * 16) + charMap[std::string(1, it[1])];
     }
     return output;
