@@ -7,8 +7,7 @@ using string = std::string;
 using stringstream = std::stringstream;
 using std::map;
 
-string hexlify(string input, bool prefix, bool caps) {
-    //std::cout << "hexlify: The length of the string is " << input.length() << std::endl;
+string hexlify(string input, bool prefix=false, bool caps=false) {
     string output;
     string chars[16] = { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
     if (prefix) {
